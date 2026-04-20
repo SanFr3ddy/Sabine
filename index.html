@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabine | Fan Page</title>
+    <meta
+      name="description"
+      content="Página móvil de Sabine con video, carta en sobre y galería de fotos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    <div id="mega-party-banner" class="mega-party-banner" hidden aria-live="polite">
+      🎉 MEGA FIESTA 🎉
+    </div>
+
+    <main class="app">
+      <header class="hero">
+        <h1>Esta pagina es para ti Sabine❤️</h1>
+        <p class="subtitle">
+          Un detalle especial para una persona increíble, ¡Feliz cumpleaños, Sabine! 🎉
+        </p>
+      </header>
+
+      <section class="video-section" aria-labelledby="video-title">
+        <h2 id="video-title">Video</h2>
+        <div class="video-card">
+          <video
+            id="sabine-video"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source src="assets/videos/Happy Birthday Sabine !.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5.
+          </video>
+          <p class="video-note">El mejor video que veras de cumpleaños JAJAJAJA✨</p>
+        </div>
+      </section>
+
+      <section class="letter-section" aria-labelledby="carta-title">
+        <h2 id="carta-title">Una carta para ti Sabine 💌</h2>
+        <p class="letter-note">Toca el sobre para abrir tu carta...</p>
+
+        <div id="envelope-card" class="envelope-card">
+          <button
+            id="envelope-toggle"
+            class="envelope"
+            type="button"
+            aria-expanded="false"
+            aria-controls="letter-paper"
+          >
+            <span class="envelope-flap"></span>
+            <span class="envelope-text">Abrir sobre</span>
+          </button>
+
+          <div id="letter-paper" class="letter-paper" hidden>
+            <article class="letter-content">
+              <p><strong>Querida Sabine...</strong></p>
+              <p>
+                Te escribo esta carta ahora de la mejor manera que puedo hacerlo, algo unico y especial para que siempre lo tengas guarado y lo puedas leer cada vez que quieras,y asi te puedas reir un rato JAJAJA
+              </p>
+              <p>
+                Sabine, eres una persona increíble, espero que este cumpleaños esté lleno de momentos felices y risas. ¡Te mereces lo mejor hoy y siempre!
+              </p>
+              <p>
+                En donde sea que estés, quiero que sepas lo mucho que te quiero y cuánto te aprecio. Eres una persona increíble. ¡Te mando un beso y un fuerte abrazo!
+              </p>
+              <p>Con cariño Alfredo🧸</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Fotos</h2>
+        <div class="gallery-grid">
+          <figure class="photo-card" data-photo="1" role="button" tabindex="0" aria-label="Foto 1 de Sabine">
+            <img src="assets/images/Captura de pantalla 2026-04-16 072831.png" alt="Foto de Sabine 1" />
+            <figcaption>✨</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="2" role="button" tabindex="0" aria-label="Foto 2 de Sabine">
+            <img src="assets/images/Captura de pantalla 2026-04-16 073924.png" alt="Foto de Sabine 2" />
+            <figcaption>🐢</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="3" role="button" tabindex="0" aria-label="Foto 3 de Sabine">
+            <img src="assets/images/Captura de pantalla 2026-04-16 092251.png" alt="Foto de Sabine 3" />
+            <figcaption>📸</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="4" role="button" tabindex="0" aria-label="Foto 4 de Sabine">
+            <img src="assets/images/Captura de pantalla 2026-04-16 135851.png" alt="Foto de Sabine 4" />
+            <figcaption>🌊</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="5" role="button" tabindex="0" aria-label="Foto 5 de Sabine">
+            <img src="assets/images/Captura de pantalla 2026-04-16 202249.png" alt="Foto de Sabine 5" />
+            <figcaption>🌅</figcaption>
+          </figure>
+          <figure class="photo-card" data-photo="6" role="button" tabindex="0" aria-label="Foto 6 de Sabine">
+            <img src="assets/images/Captura de pantalla 2026-04-17 075902.png" alt="Foto de Sabine 6" />
+            <figcaption>❤️</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
